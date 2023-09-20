@@ -1,0 +1,26 @@
+﻿  glad.c
+  main.cpp
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1141,28): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1145,28): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1149,28): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1153,28): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1157,24): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1161,24): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1165,24): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\2d ship\main.cpp(1169,24): warning C4305: '-=': truncation from 'double' to 'float'
+glfw3.lib(init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(window.obj)' or at ''; linking object as if no debug info
+glfw3.lib(input.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(input.obj)' or at ''; linking object as if no debug info
+glfw3.lib(context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_monitor.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_time.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_time.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_thread.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_thread.obj)' or at ''; linking object as if no debug info
+glfw3.lib(monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(monitor.obj)' or at ''; linking object as if no debug info
+glfw3.lib(vulkan.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(vulkan.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_window.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_joystick.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_joystick.obj)' or at ''; linking object as if no debug info
+glfw3.lib(wgl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(wgl_context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(egl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(egl_context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(osmesa_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(osmesa_context.obj)' or at ''; linking object as if no debug info
+  2d ship.vcxproj -> C:\Users\User\Desktop\graphics assignments\2d ship\x64\Debug\2d ship.exe
