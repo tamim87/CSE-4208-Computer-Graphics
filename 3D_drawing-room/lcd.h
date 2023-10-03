@@ -44,11 +44,11 @@ public:
 
 
 		//BlackBoard border
-		model = transforamtion(-.5 + 1, 0.5, -8.9, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12 - 2, 3, 0.2);
+		model = transforamtion(-.5 + 1, 0.5, -8.9, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12 - 2-3, 3, 0.2);
 		modelMatrices.push_back(model);
 
 		//blacboard screen
-		model = transforamtion(-.6 + 1, 0.4, -8.95, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12.5 - 2, 3.5, 0.2);
+		model = transforamtion(-.6 + 1, 0.4, -8.95, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12.5 - 2-3, 3.5, 0.2);
 		modelMatrices.push_back(model);
 
 		
@@ -87,13 +87,13 @@ public:
 		
 
 		//BlackBoard border
-		model = transforamtion(-.5 + 1, 0.5, -8.9, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12 - 2, 3, 0.2);
+		model = transforamtion(-.5 + 1, 0.5, -8.9, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12 - 2, 3, 0.09);
 		ourShader.setMat4("model", model);
 		glBindVertexArray(VAOB);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
 		//blacboard screen
-		model = transforamtion(-.6 + 1, 0.4, -8.95, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12.5 - 2, 3.5, 0.2);
+		model = transforamtion(-.6 + 1, 0.4, -8.95, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 12.5 - 2, 3.5, 0.09);
 		ourShader.setMat4("model", model);
 		glBindVertexArray(VAO4);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);

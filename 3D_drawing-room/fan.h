@@ -38,7 +38,7 @@ public:
 	Shader local_rotation(Shader ourShader, unsigned int VAOF3,  float angle = 0) {
 		glm::mat4 model;
 		float rotateAngle_X = 0;
-		float rotateAngle_Y = 80;
+		float rotateAngle_Y = 0;
 		float rotateAngle_Z = 0;
 		//model = transforamtion(2.125, 2.25, -5.875, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, .5, .75, .5);
 		//modelMatrices.push_back(model);
@@ -46,9 +46,9 @@ public:
 		modelMatrices.push_back(model);*/
 		model = transforamtion(2.375, 2.35+1.5, -5.875+3.5, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, -.5, .05, -2);
 		modelMatrices.push_back(model);
-		model = transforamtion(2.375 - .13, 2.35+1.5, -5.875 + 3.5 + .13, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2, .05, .5);
+		model = transforamtion(2.375 - .13, 2.35+1.5, -5.875 + 3.5 + .13, rotateAngle_X, rotateAngle_Y+15, rotateAngle_Z, 2, .05, .5);
 		modelMatrices.push_back(model);
-		model = transforamtion(2.125+.20, 2.35+1.5, -5.625 + 3.4, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, -2, .05, -.5);
+		model = transforamtion(2.125+.20, 2.35+1.5, -5.625 + 3.5, rotateAngle_X, rotateAngle_Y+50, rotateAngle_Z, -2, .05, -.5);
 		modelMatrices.push_back(model);
 
 		unsigned int vertex_array[] = { VAOF3, VAOF3, VAOF3, VAOF3 };

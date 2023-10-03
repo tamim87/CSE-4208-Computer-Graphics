@@ -36,7 +36,7 @@ public:
 		return model;
 	}
 
-	Shader local_rotation(Shader ourShader, unsigned int  VAO, unsigned int VAOF3, unsigned int VAO3, unsigned int VAO2, unsigned int VAOW2, float angle = 0) {
+	Shader local_rotation(Shader ourShader, unsigned int  VAO, unsigned int VAO2, unsigned int VAO3, unsigned int VAO4, unsigned int VAO5, unsigned int VAO6, float angle = 0) {
 		glm::mat4 model;
 		float rotateAngle_X = 0;
 		float rotateAngle_Y = 0;
@@ -45,13 +45,18 @@ public:
 		modelMatrices.push_back(model);
 		model = transforamtion(-1.4, -.50, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 0.1f, 9.0f);
 		modelMatrices.push_back(model);
+
+		model = transforamtion(-1.4, -.50 + .21, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 0.08f, 0.1f, 9.0f);
+		modelMatrices.push_back(model);
+
+
 		model = transforamtion(-1.4, -.75, -5.25 - .35 / 2, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 2.0f, 0.35f);
 		modelMatrices.push_back(model);
 		model = transforamtion(-1.4, -.75, -5.25 + 9.0 / 2, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 2.0f, 0.35f);
 		modelMatrices.push_back(model);
 		model = transforamtion(-1.4, -.50 + .1 / 2, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 0.1f + .3f, 9.0f);
 		modelMatrices.push_back(model);
-		unsigned int vertex_array[] = { VAO, VAOF3, VAO3, VAO2, VAOW2 };
+		unsigned int vertex_array[] = { VAO, VAO2, VAO3, VAO4, VAO5, VAO6 };
 		glm::vec3 averagePosition(0.0f);
 		for (const glm::mat4& model : modelMatrices) {
 			averagePosition += glm::vec3(model[3]);
@@ -78,7 +83,7 @@ public:
 		return ourShader;
 	}
 
-	Shader ret_shader(Shader ourShader, unsigned int  VAO, unsigned int VAOF3, unsigned int VAO3, unsigned int VAO2, unsigned int VAOW2) {
+	Shader ret_shader(Shader ourShader, unsigned int  VAO, unsigned int VAO2, unsigned int VAO3, unsigned int VAO4, unsigned int VAO5, unsigned int VAO6) {
 		glm::mat4 model;
 		float rotateAngle_X = 0;
 		float rotateAngle_Y = 0;
@@ -91,19 +96,20 @@ public:
 		glBindVertexArray(VAO);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
-		////sofa seat
-		//model = transforamtion(-1.4, -.60, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 0.1f, 9.0f);
-		//ourShader.setMat4("model", model);
-		////ourShader.setVec4("color", glm::vec4(0.5f, 0.5f, 0.0f, 1.0f));
-		//glBindVertexArray(VAO2);
-		//glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
-
 
 		//sofa seat
 		model = transforamtion(-1.4, -.50, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 0.1f, 9.0f);
 		ourShader.setMat4("model", model);
 		//ourShader.setVec4("color", glm::vec4(0.5f, 0.5f, 0.0f, 1.0f));
-		glBindVertexArray(VAOF3);
+		glBindVertexArray(VAO2);
+		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
+
+
+		//sofa splitter
+		model = transforamtion(-1.4, -.50+.21, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 0.08f, 0.1f, 9.0f);
+		ourShader.setMat4("model", model);
+		//ourShader.setVec4("color", glm::vec4(0.5f, 0.5f, 0.0f, 1.0f));
+		glBindVertexArray(VAO3);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
 
@@ -111,7 +117,7 @@ public:
 		model = transforamtion(-1.4, -.75, -5.25 - .35 / 2, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 2.0f, 0.35f);
 		ourShader.setMat4("model", model);
 		//ourShader.setVec4("color", glm::vec4(0.5f, 0.5f, 0.0f, 1.0f));
-		glBindVertexArray(VAO2);
+		glBindVertexArray(VAO4);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
 
@@ -119,7 +125,7 @@ public:
 		model = transforamtion(-1.4, -.75, -5.25 + 9.0 / 2, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 2.0f, 0.35f);
 		ourShader.setMat4("model", model);
 		//ourShader.setVec4("color", glm::vec4(0.5f, 0.5f, 0.0f, 1.0f));
-		glBindVertexArray(VAO2);
+		glBindVertexArray(VAO5);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 
 
@@ -127,7 +133,7 @@ public:
 		model = transforamtion(-1.4, -.50 + .1 / 2, -5.25, rotateAngle_X, rotateAngle_Y, rotateAngle_Z, 2.0f, 0.1f + .3f, 9.0f);
 		ourShader.setMat4("model", model);
 		//ourShader.setVec4("color", glm::vec4(0.5f, 0.5f, 0.0f, 1.0f));
-		glBindVertexArray(VAOW2);
+		glBindVertexArray(VAO6);
 		glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, 0);
 		return ourShader;
 	}
