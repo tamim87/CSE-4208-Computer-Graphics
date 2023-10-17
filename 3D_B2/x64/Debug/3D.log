@@ -1,0 +1,29 @@
+﻿  main.cpp
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(385,75): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(386,75): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(387,75): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(388,75): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(389,75): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(390,75): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(391,71): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(392,71): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(393,71): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(394,71): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(395,71): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(396,71): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(400,29): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(407,29): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(414,29): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(422,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(427,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(432,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(437,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(442,21): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(447,21): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(452,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(457,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(462,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(467,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(472,24): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\3D_B2\main.cpp(477,24): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  3D.vcxproj -> C:\Users\User\Desktop\graphics assignments\3D_B2\x64\Debug\3D.exe

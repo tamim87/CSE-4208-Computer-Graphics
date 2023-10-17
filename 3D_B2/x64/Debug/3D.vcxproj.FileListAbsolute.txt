@@ -1,0 +1,6 @@
+C:\Users\Nazirul Hasan\Desktop\3D\x64\Debug\3D.exe
+F:\CSE 4208\Lab 2\3D\x64\Debug\3D.exe
+C:\Users\softl\Music\Lab 2\3D\x64\Debug\3D.exe
+C:\Users\softl\Music\Lab 2-b2\3D\x64\Debug\3D.exe
+C:\Users\User\Desktop\f\Lab 2-b2\3D\x64\Debug\3D.exe
+C:\Users\User\Desktop\graphics assignments\3D_B2\x64\Debug\3D.exe
