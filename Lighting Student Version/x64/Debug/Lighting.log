@@ -1,0 +1,104 @@
+﻿  glad.c
+  main.cpp
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(204,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(221,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(222,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(233,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(234,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(648,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(650,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(652,24): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(653,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(663,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(663,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(663,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(674,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(674,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(674,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(685,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(685,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(685,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(696,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(696,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(696,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(707,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(707,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(707,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(716,22): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(727,51): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(727,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(762,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(762,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(762,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(774,56): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(774,51): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(774,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(786,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(786,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(786,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(797,59): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(797,52): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(797,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(808,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(808,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(808,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(819,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(819,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(819,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(830,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(830,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(830,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(845,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(845,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(845,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(858,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(858,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(858,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(869,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(869,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(869,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(880,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(880,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(880,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(891,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(891,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(891,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(904,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(904,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(904,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(921,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(921,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(921,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(933,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(933,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(933,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(945,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(945,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(945,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(957,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(957,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(957,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(969,60): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(969,53): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(969,46): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(1090,75): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(1091,75): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(1092,75): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(1093,75): warning C4305: '-=': truncation from 'double' to 'float'
+C:\Users\User\Desktop\graphics assignments\Lighting Student Version\main.cpp(1094,75): warning C4305: '+=': truncation from 'double' to 'float'
+glfw3.lib(init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(window.obj)' or at ''; linking object as if no debug info
+glfw3.lib(input.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(input.obj)' or at ''; linking object as if no debug info
+glfw3.lib(context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_init.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_init.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_monitor.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_time.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_time.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_thread.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_thread.obj)' or at ''; linking object as if no debug info
+glfw3.lib(monitor.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(monitor.obj)' or at ''; linking object as if no debug info
+glfw3.lib(vulkan.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(vulkan.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_window.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_window.obj)' or at ''; linking object as if no debug info
+glfw3.lib(win32_joystick.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(win32_joystick.obj)' or at ''; linking object as if no debug info
+glfw3.lib(wgl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(wgl_context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(egl_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(egl_context.obj)' or at ''; linking object as if no debug info
+glfw3.lib(osmesa_context.obj) : warning LNK4099: PDB '' was not found with 'glfw3.lib(osmesa_context.obj)' or at ''; linking object as if no debug info
+  Lighting.vcxproj -> C:\Users\User\Desktop\graphics assignments\Lighting Student Version\x64\Debug\Lighting.exe
