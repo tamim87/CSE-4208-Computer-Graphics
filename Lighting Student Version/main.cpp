@@ -69,7 +69,7 @@ glm::vec3 pointLightPositions[] = {
     glm::vec3(3.50f,  5.50f,  -1.0f), /// Spot
     glm::vec3(0.5f + 10.0f,  3.5f,  0.0f + 20.0f),   /// Point
     glm::vec3(3.0f,  15.5f,  1.5f), /// Sun
-    //glm::vec3(-1.5f,  -1.5f,  0.0f) //point 2
+    glm::vec3(0.5f,  3.5f,  0.0f) //point 2
 };
 PointLight pointlight1(
 
@@ -372,7 +372,7 @@ int main()
         // point light 3
         pointlight3.setUpPointLight(lightingShader);
         // point light 4
-       // pointlight4.setUpPointLight(lightingShader);
+        pointlight4.setUpPointLight(lightingShader);
 
         // activate shader
         lightingShader.use();
@@ -449,7 +449,7 @@ int main()
             }
             if (i == 3)
             {
-                if (pointlight3.isOn())
+                if (pointlight4.isOn())
                     ourShader.setVec3("color", glm::vec3(0.8f, 0.8f, 0.8f));
                 else
                     ourShader.setVec3("color", glm::vec3(0.2f, 0.2f, 0.2f));
