@@ -34,6 +34,7 @@ struct Point {
 float baseHeight = 0.01;
 float width = 30.0 + 20.0;
 float length = 20.5 + 20.0;
+float buselevationy = 1;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
@@ -80,10 +81,10 @@ BasicCamera basic_camera(eyeX, eyeY, eyeZ, lookAtX, lookAtY, lookAtZ, V);
 
 // positions of the point lights
 glm::vec3 pointLightPositions[] = {
-    glm::vec3(3.50f,  5.50f,  -1.0f), /// Spot
+    glm::vec3(3.50f,  5.50f,  -1.0f + 8.0f), /// Spot
     glm::vec3(0.5f + 10.0f,  3.5f,  0.0f + 20.0f),   /// Point
-    glm::vec3(3.0f,  15.5f,  1.5f), /// diffuse
-    glm::vec3(0.5f,  3.5f,  0.0f) //point 2
+    glm::vec3(3.0f,  15.5f,  1.5f+8.0f), /// diffuse
+    glm::vec3(0.5f,  3.5f,  0.0f + 8.0f) //point 2
 };
 
 PointLight pointlight1(
@@ -191,7 +192,7 @@ int main()
     glfwSetScrollCallback(window, scroll_callback);
 
     // tell GLFW to capture our mouse
-    //glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
@@ -405,14 +406,14 @@ int main()
     string specularMapPathg = "./ground.jpg";
     unsigned int diffMapg = loadTexture(diffuseMapPathg.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     unsigned int specMapg = loadTexture(specularMapPathg.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
-    Cube cubeg = Cube(diffMapg, specMapg, 32.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+    Cube cubeg = Cube(diffMapg, specMapg, 32.0f, 0.0f, 0.0f, 20.0f, 20.0f);
 
     //road texture
     string diffuseMapPathr = "./road.jpg";
     string specularMapPathr = "./road.jpg";
     unsigned int diffMapr = loadTexture(diffuseMapPathr.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
     unsigned int specMapr = loadTexture(specularMapPathr.c_str(), GL_REPEAT, GL_REPEAT, GL_LINEAR_MIPMAP_LINEAR, GL_LINEAR);
-    Cube cuber = Cube(diffMapr, specMapr, 32.0f, 0.0f, 0.0f, 1.0f, 1.0f);
+    Cube cuber = Cube(diffMapr, specMapr, 32.0f, 0.0f, 0.0f, 10.0f, 20.0f);
 
 
 
@@ -501,7 +502,7 @@ int main()
         model = glm::mat4(1.0f);
         //translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 1, baseHeight + 1 + 2, buswidth / 1.50));
         //scaleMatrix = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
-        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 6, baseHeight + .8, 100));
+        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 6, baseHeight + .8 + buselevationy, 100));
         //rotateXMatrix = glm::rotate(model, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(.5, .5, .215));
         model = scaleMatrix * translateMatrix;
@@ -513,7 +514,7 @@ int main()
 
         //bus tire 2 using cylinder
         model = glm::mat4(1.0f);
-        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 18, baseHeight + .8, 100));
+        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 18, baseHeight + .8 + buselevationy, 100));
         //rotateXMatrix = glm::rotate(model, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(.5, .5, .215));
         model = scaleMatrix * translateMatrix;
@@ -526,7 +527,7 @@ int main()
 
         //bus tire 3 using cylinder
         model = glm::mat4(1.0f);
-        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 6, baseHeight -.8, -75));
+        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 6, baseHeight -.8 - buselevationy, -75));
         rotateXMatrix = glm::rotate(model, glm::radians(180.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(.5, .5, .215));
         model = rotateXMatrix * scaleMatrix * translateMatrix;
@@ -539,7 +540,7 @@ int main()
 
         //bus tire 4 using cylinder
         model = glm::mat4(1.0f);
-        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 18, baseHeight - .8, -75));
+        translateMatrix = glm::translate(model, glm::vec3(0 + 2 + 18, baseHeight - .8 - buselevationy, -75));
         rotateXMatrix = glm::rotate(model, glm::radians(180.0f), glm::vec3(1.0f, 0.0f, 0.0f));
         scaleMatrix = glm::scale(identityMatrix, glm::vec3(.5, .5, .215));
         model = rotateXMatrix * scaleMatrix * translateMatrix;
@@ -1011,7 +1012,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2, baseHeight+.6, buswidth / 1.6 + 1));
+    translate2 = glm::translate(model, glm::vec3(0 + 2, baseHeight+.6 + buselevationy, buswidth / 1.6 + 1));
     scale = glm::scale(model, glm::vec3(buslength / 3, baseHeight + 5, (buswidth / 4) - 2));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1022,7 +1023,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1, baseHeight + 1 + 2, buswidth / 1.50));
+    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1, baseHeight + 1 + 2 + buselevationy, buswidth / 1.50));
     scale = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1033,7 +1034,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 +3, baseHeight + 1 + 2, buswidth / 1.5));
+    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 +3, baseHeight + 1 + 2 + buselevationy, buswidth / 1.5));
     scale = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1044,7 +1045,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 + 6, baseHeight + 1 + 2, buswidth / 1.50));
+    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 + 6, baseHeight + 1 + 2 + buselevationy, buswidth / 1.50));
     scale = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1056,7 +1057,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1, baseHeight + 1 + 2, buswidth / 1.50 + (buswidth / 4) - 2.3  ));
+    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1, baseHeight + 1 + 2 + buselevationy, buswidth / 1.50 + (buswidth / 4) - 2.3  ));
     scale = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1067,7 +1068,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 + 3, baseHeight + 1 + 2, buswidth / 1.5 + (buswidth / 4) - 2.3));
+    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 + 3, baseHeight + 1 + 2 + buselevationy, buswidth / 1.5 + (buswidth / 4) - 2.3));
     scale = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1078,7 +1079,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 + 6, baseHeight + 1 + 2, buswidth / 1.50 + (buswidth / 4) - 2.3));
+    translate2 = glm::translate(model, glm::vec3(0 + 2 + 1 + 6, baseHeight + 1 + 2 + buselevationy, buswidth / 1.50 + (buswidth / 4) - 2.3));
     scale = glm::scale(model, glm::vec3(4 / 2.3, 10 / 5, baseHeight + .6));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
@@ -1089,7 +1090,7 @@ void room(unsigned int& cubeVAO, Shader& lightingShader, glm::mat4 alTogether)
     translate = glm::mat4(1.0f);
     translate2 = glm::mat4(1.0f);
     scale = glm::mat4(1.0f);
-    translate2 = glm::translate(model, glm::vec3(0 + 2, baseHeight + .6 + (baseHeight + 5)/2 -1, (buswidth / 1.6) + 1 + (buswidth / 4) - 2));
+    translate2 = glm::translate(model, glm::vec3(0 + 2, baseHeight + .6 + (baseHeight + 5)/2 -1 + buselevationy, (buswidth / 1.6) + 1 + (buswidth / 4) - 2));
     scale = glm::scale(model, glm::vec3(buslength /3, baseHeight, baseHeight + .09));
     translate = glm::translate(model, glm::vec3(0, 0, 0));
     model = alTogether * translate2 * scale * translate;
